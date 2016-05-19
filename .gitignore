@@ -1,0 +1,5 @@
+node_modules
+.quotes.txt.swp
+coverage
+config.json
+npm-debug.log

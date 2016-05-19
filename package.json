@@ -1,0 +1,25 @@
+{
+  "name": "slack_classebot",
+  "version": "1.0.0",
+  "description": "Slack bot adding \"Classe\" to conversations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "cover": "istanbul cover _mocha -- -R spec",
+    "test": "mocha test/ -w -R min"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.11.1",
+    "slackbots": "^0.5.1"
+  },
+  "engine": {
+    "node": ">=5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  }
+}

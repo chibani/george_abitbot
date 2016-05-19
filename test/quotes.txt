@@ -1,0 +1,3 @@
+|Ceci est une première citation
+seconde, puissante|Ceci est une seconde citation
+puissante, dernière, voici|Et en voici une dernière
