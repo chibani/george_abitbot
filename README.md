@@ -1,59 +1,63 @@
-# Slack classebot
+# George AbitboT
 
-A slack bot, with the american class !
-Disclaimer : this joke are 100% french, and are from the "La classe américaine" movie.  
+Le bot le plus classe du monde !
 
 ![George's portrait](https://github.com/chibani/george_abitbot/raw/master/assets/george.png)
 
-## Purpose
-This bot is just saying quotes from "La classe américaine" when we say "George" or "classe" in a message.  
-It also answers to "yep", like those two cowboys.
+## But
+Ce bot balance aléatoirement des citations tirées du flim "La classe américaine" lorsqu'on évoque "George" ou qu'on parle de "classe".  
+Accessoirement, il réagit également quand on dit "yep".
 
-## Requirements
+## Pré-requis techniques
 
-You'll need :
+Il vous faudra :
  * npm
  * nodejs >= 5.0.0
 
 ## Installation
 
- * Create a bot : https://slack.com/apps/build/custom-integration
- * (Optional : I've added an avatar in the assets/ directory)
- * clone the project
- * cd in the directory
- * run "npm install"  
- * copy config.json.sample to config.json  
- * edit config.json to meet your correct's bot settings  
+ * Créez un bot : https://slack.com/apps/build/custom-integration
+ * (Optionnel : j'ai ajouté un avatar de George dans le dossier assets/ de ce projet)
+ * clonez ce projet
+ * en console, rendez-vous dans le dossier du projet
+ * lancez `npm install`  
+ * copiez config.json.sample vers config.json  
+ * modifiez config.json en fonction des infos de votre bot (notamment Token, fourni par Slack)  
+
+## Lancer le bot
+
+Lancez ``npm start``
+
+Le bot devrait se connecter à votre chat Slack.  
+Vous pouvez commencer à découvrir la classe.  
+
 
 ## Tests
 
-run ``npm test``  
-The tests are run in watch mode, and minimal display.
+Le code bénéficie de quelques tests (sous mocha).  
+Lancez ``npm test``  
+Les tests tournent en mode "watch", avec un reporting minimal.
 
-For coverage, run ``npm cover``
-Coverage informations should be displayed. They only concern the lib/ directory.  
+Pour la couverture de code, lancez ``npm cover``
+La couverture ne concerne que le dossier lib/.  
 
-More details on coverage can be found in the coverage/directory.  
-coverage/lcov-report/index.html can be viewed in a browser to see the exact coverage.  
+Vous trouverez également des infos complémentaires sur la couverture dans le dossier coverage/.  
+coverage/lcov-report/index.html peut même être ouvert dans un navigateur pour plus de détails.  
 
-## Running the bot
+## Citations
 
-run ``npm start``
+Le fichier quotes.txt contient de nombreuses (quasi toutes) citations tirées du flim.
 
-The bot should get connected to your slack chat.  
-You can start talking with it
-
-## Quotes
-``quotes.txt.sample`` can help you create your own ``quotes.txt``.  
-You can put quotes.txt wherever you want, and set its path in ``config.json``:  
+``quotes.txt.sample`` est un fichier d'exemple plus succint pour créer votre propre ``quotes.txt``.  
+Vous pouvez placer quotes.txt où vous le souhaitez (mais toujours avec classe) et indiquer son chemin dans ``config.json``:  
  * "quotesPath": "quotes.txt"  
 
-The file ``quotes.txt`` must contain all the quotes available.  
+Le fichier ``quotes.txt`` doit contenir toutes les citations que vous souhaitez afficher.  
 
-Each line, in this file, is presented as follow :  
-``keyword, other_keywod|The real quote``
- * a list of keywords, comma separated
- * a pipe ``|``, to separate
- * a sentence (or group of sentences), corresponding to the actual quote
+Chaque ligne du fichier se présente comme suit :  
+``keyword, other_keywod|La citation``
+ * une liste de mots-clés, séparés par des virgules
+ * un pipe ``|``, pour séparer de la suite
+ * une phrase (ou ensemble de phrases), qui se trouve être la citation
 
-The keyword reaction feature is currently disabled, because it doesn't work (but feel free to fix it ;) ).
+Parmi les fonctionnalités prévues (mais non terminée), il y avait un système de réponse "contextuelle", basée sur les mots-clés du fichier quotes.txt, mais le résultat était assez décevant, et la fonctionnalité est donc désactivée.
