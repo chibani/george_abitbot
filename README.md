@@ -8,6 +8,8 @@ Le bot le plus classe du monde !
 Ce bot balance aléatoirement des citations tirées du flim "La classe américaine" lorsqu'on évoque "George" ou qu'on parle de "classe".  
 Accessoirement, il réagit également quand on dit "yep".
 
+![Screenshot](https://github.com/chibani/george_abitbot/raw/master/assets/capture.png)
+
 ## Pré-requis techniques
 
 Il vous faudra :
