@@ -5,6 +5,10 @@ Disclaimer : this joke are 100% french, and are from the "La classe américaine"
 
 ![George's portrait](https://github.com/chibani/george_abitbot/raw/master/assets/george.png)
 
+## Purpose
+This bot is just saying quotes from "La classe américaine" when we say "George" or "classe" in a message.  
+It also answers to "yep", like those two cowboys.
+
 ## Requirements
 
 You'll need :
@@ -51,3 +55,5 @@ Each line, in this file, is presented as follow :
  * a list of keywords, comma separated
  * a pipe ``|``, to separate
  * a sentence (or group of sentences), corresponding to the actual quote
+
+The keyword reaction feature is currently disabled, because it doesn't work (but feel free to fix it ;) ).
