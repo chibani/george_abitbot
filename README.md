@@ -5,8 +5,9 @@ Le bot le plus classe du monde !
 ![George's portrait](https://github.com/chibani/george_abitbot/raw/master/assets/george.png)
 
 ## But
-Ce bot balance aléatoirement des citations tirées du flim "La classe américaine" lorsqu'on évoque "George" ou qu'on parle de "classe".  
-Accessoirement, il réagit également quand on dit "yep".
+
+Ce bot balance aléatoirement des citations tirées du flim "_La classe américaine_" lorsqu'on évoque "George" ou qu'on parle de "classe".  
+Accessoirement, il réagit également quand on dit "yep".  
 
 ![Screenshot](https://github.com/chibani/george_abitbot/raw/master/assets/capture.png)
 
@@ -15,6 +16,8 @@ Accessoirement, il réagit également quand on dit "yep".
 Il vous faudra :
  * npm
  * nodejs >= 5.0.0
+ * un chan Slack
+ * un peu de surpuissance
 
 ## Installation
 
@@ -63,3 +66,8 @@ Chaque ligne du fichier se présente comme suit :
  * une phrase (ou ensemble de phrases), qui se trouve être la citation
 
 Parmi les fonctionnalités prévues (mais non terminée), il y avait un système de réponse "contextuelle", basée sur les mots-clés du fichier quotes.txt, mais le résultat était assez décevant, et la fonctionnalité est donc désactivée.
+
+## Comment contribuer ?
+
+Vous avez vu un bug, pensez que le code mérite quelques retouches (sic) ?  
+N'hésitez pas à forker et proposer une PR :)  
