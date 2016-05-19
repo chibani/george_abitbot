@@ -1,6 +1,9 @@
 # Slack classebot
 
 A slack bot, with the american class !
+Disclaimer : this joke are 100% french, and are from the "La classe américaine" movie.  
+
+![George's portrait](https://github.com/chibani/george_abitbot/raw/master/assets/george.png)
 
 ## Requirements
 
@@ -11,6 +14,7 @@ You'll need :
 ## Installation
 
  * Create a bot : https://slack.com/apps/build/custom-integration
+ * (Optional : I've added an avatar in the assets/ directory)
  * clone the project
  * cd in the directory
  * run "npm install"  
@@ -19,8 +23,10 @@ You'll need :
 
 ## Tests
 
-run ``npm test``
+run ``npm test``  
+The tests are run in watch mode, and minimal display.
 
+For coverage, run ``npm cover``
 Coverage informations should be displayed. They only concern the lib/ directory.  
 
 More details on coverage can be found in the coverage/directory.  
