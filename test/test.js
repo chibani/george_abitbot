@@ -84,8 +84,10 @@ describe('ClasseBot', ()=>{
         it('should detect a message, with the text',()=>{
             assert.isFalse(bot._isEqual({type:'message'}, 'AAA'));
             assert.isFalse(bot._isEqual({type:'message', text: 'AAA'}, null));
-            assert.isFalse(bot._isEqual({type:'message', text: 'AAA'}, 'BBB'));
-            assert.isTrue(bot._isEqual({type:'message', text: 'AAA'}, 'AAA'));
+            assert.isFalse(bot._isEqual({type:'message', text: 'yep'}, 'yop'));
+            assert.isTrue(bot._isEqual({type:'message', text: 'yep'}, 'yep'));
+            assert.isTrue(bot._isEqual({type:'message', text: 'Yep'}, 'yep'));
+
         });
 
         it('should detect "George"',()=>{
