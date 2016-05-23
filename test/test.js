@@ -90,6 +90,15 @@ describe('ClasseBot', ()=>{
 
         });
 
+        it('should detect a message starting with the text',()=>{
+            assert.isFalse(bot._startsWith({type:'message'}, 'AAA'));
+            assert.isFalse(bot._startsWith({type:'message', text: 'AAA'}, null));
+            assert.isFalse(bot._startsWith({type:'message', text: 'yep !'}, 'yop'));
+            assert.isTrue(bot._startsWith({type:'message', text: 'yep'}, 'yep'));
+            assert.isTrue(bot._startsWith({type:'message', text: 'Yep !'}, 'yep'));
+
+        });
+
         it('should detect "George"',()=>{
             assert.isFalse(bot._containsKeyword({type:'message', text: 'AAA'}));
             assert.isFalse(bot._containsKeyword({type:'message', text: 'salut georgeabitbol'}));
