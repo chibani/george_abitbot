@@ -1,6 +1,6 @@
 {
     "token": "xoxb-YOUR_BOT_TOKEN",
-    "name": "The name of your bot",
+    "name": "First-Name + Last-Name of your bot",
     "quotesPath": "quotes.txt",
     "keywords": ["george","classe"]
 }
