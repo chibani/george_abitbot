@@ -27,7 +27,7 @@ Il vous faudra :
  * en console, rendez-vous dans le dossier du projet
  * lancez `npm install`  
  * copiez config.json.sample vers config.json  
- * modifiez config.json en fonction des infos de votre bot (notamment Token, fourni par Slack)  
+ * modifiez config.json en fonction des infos de votre bot (notamment Token, et Nom + Prénom du bot dans "Name")  
 
 ## Lancer le bot
 
