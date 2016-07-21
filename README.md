@@ -28,6 +28,7 @@ Il vous faudra :
  * lancez `npm install`  
  * copiez config.json.sample vers config.json  
  * modifiez config.json en fonction des infos de votre bot (notamment Token, et Nom + Prénom du bot dans "Name")  
+ * Invitez le bot dans un de vos channels : /invite @bot_name 
 
 ## Lancer le bot
 
